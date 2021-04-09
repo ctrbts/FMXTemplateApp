@@ -51,9 +51,10 @@ type
     procedure btnCloseMenuClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
-    procedure FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);
+    procedure FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char;
+      Shift: TShiftState);
     procedure FormShow(Sender: TObject);
-    procedure SpeedButton1Click(Sender: TObject);
+    procedure BottomBarClick(Sender: TObject);
     procedure SpeedButton2Click(Sender: TObject);
     procedure SpeedButton3Click(Sender: TObject);
     procedure SpeedButton4Click(Sender: TObject);
@@ -172,7 +173,8 @@ begin
   end;
 end;
 
-procedure TfMain.FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);
+procedure TfMain.FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char;
+  Shift: TShiftState);
 begin
   // assign virtual or fisical back button action
   if Key = vkHardwareBack then
@@ -228,10 +230,18 @@ begin
   CreateForm(TfText);
 end;
 
-procedure TfMain.SpeedButton1Click(Sender: TObject);
+procedure TfMain.BottomBarClick(Sender: TObject);
 begin
-  // create a child form
-  CreateForm(TfPalette);
+  // bottom bar menu
+  case (Sender as TSpeedButton).Tag of
+    1:
+      while FFrmList.Count > 0 do
+        FreeForm;
+    2:
+      ;
+    3:
+      ;
+  end;
 end;
 
 procedure TfMain.SpeedButton2Click(Sender: TObject);

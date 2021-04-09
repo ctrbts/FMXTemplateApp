@@ -1,0 +1,126 @@
+object fText: TfText
+  Left = 0
+  Top = 0
+  Caption = 'fText'
+  ClientHeight = 480
+  ClientWidth = 640
+  StyleBook = fMain.StyleBook
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Align = Top
+    AutoSize = True
+    StyledSettings = [Style, FontColor]
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 600.000000000000000000
+    Size.Height = 62.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Segoe UI Light'
+    TextSettings.Font.Size = 46.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Header, Segoe UI Light 46 pt'
+  end
+  object Label2: TLabel
+    Align = Top
+    AutoSize = True
+    StyledSettings = [Style, FontColor]
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 92.000000000000000000
+    Size.Width = 600.000000000000000000
+    Size.Height = 46.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Segoe UI Light'
+    TextSettings.Font.Size = 34.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Sub Header, Segoe UI Light 34 pt'
+  end
+  object Label3: TLabel
+    Align = Top
+    AutoSize = True
+    StyledSettings = [Style, FontColor]
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 148.000000000000000000
+    Size.Width = 600.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Segoe UI SemiLight'
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Title, Segoe UI Semi Light 24 pt'
+  end
+  object Label4: TLabel
+    Align = Top
+    AutoSize = True
+    StyledSettings = [Family, Style, FontColor]
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 190.000000000000000000
+    Size.Width = 600.000000000000000000
+    Size.Height = 27.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Subtitle, Segoe UI Normal 20 pt'
+  end
+  object Label5: TLabel
+    Align = Top
+    AutoSize = True
+    StyledSettings = [FontColor]
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 227.000000000000000000
+    Size.Width = 600.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Segoe UI SemiBold'
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Base, Segoe UI Semi Bold 15 pt'
+  end
+  object Label6: TLabel
+    Align = Top
+    AutoSize = True
+    StyledSettings = [Family, Style, FontColor]
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 257.000000000000000000
+    Size.Width = 600.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Body, Segoe UI Normal 15 pt'
+  end
+  object Label7: TLabel
+    Align = Top
+    AutoSize = True
+    Margins.Left = 20.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 20.000000000000000000
+    Position.X = 20.000000000000000000
+    Position.Y = 287.000000000000000000
+    Size.Width = 600.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'Caption, Segoe UI Normal 12 pt'
+  end
+end

@@ -1,0 +1,62 @@
+object fLogin: TfLogin
+  Left = 0
+  Top = 0
+  ClientHeight = 640
+  ClientWidth = 480
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object imgBackground: TImage
+    MultiResBitmap.Height = 1106
+    MultiResBitmap.Width = 1500
+    MultiResBitmap = <
+      item
+      end>
+    Align = Contents
+    Margins.Left = -200.000000000000000000
+    Margins.Top = -100.000000000000000000
+    Margins.Right = -200.000000000000000000
+    Margins.Bottom = -100.000000000000000000
+    Size.Width = 880.000000000000000000
+    Size.Height = 840.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+    object rtFondo: TRectangle
+      Align = Client
+      Fill.Color = claBlueviolet
+      Size.Width = 880.000000000000000000
+      Size.Height = 840.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+    end
+    object HorzCenterLayout: TLayout
+      Align = HorzCenter
+      Position.X = 290.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 840.000000000000000000
+      Size.PlatformDefault = False
+      object VertCenterLayout: TLayout
+        Align = VertCenter
+        Position.Y = 188.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 463.000000000000000000
+        Size.PlatformDefault = False
+        object btnLogin: TButton
+          Align = Bottom
+          StyledSettings = [Family, Style]
+          Position.Y = 413.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'ButtonRoundGray'
+          Text = 'INICIAR SESI'#211'N'
+          TextSettings.Font.Size = 16.000000000000000000
+          TintColor = claTeal
+          OnClick = btnLoginClick
+        end
+      end
+    end
+  end
+end

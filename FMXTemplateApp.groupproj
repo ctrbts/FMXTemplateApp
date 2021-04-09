@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3414CF20-D92E-498C-9C77-B3EF7E542218}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="StackForm\StackForm.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SingleForm\SingleForm.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="StackForm">
+        <MSBuild Projects="StackForm\StackForm.dproj"/>
+    </Target>
+    <Target Name="StackForm:Clean">
+        <MSBuild Projects="StackForm\StackForm.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StackForm:Make">
+        <MSBuild Projects="StackForm\StackForm.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SingleForm">
+        <MSBuild Projects="SingleForm\SingleForm.dproj"/>
+    </Target>
+    <Target Name="SingleForm:Clean">
+        <MSBuild Projects="SingleForm\SingleForm.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SingleForm:Make">
+        <MSBuild Projects="SingleForm\SingleForm.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="StackForm;SingleForm"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="StackForm:Clean;SingleForm:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="StackForm:Make;SingleForm:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

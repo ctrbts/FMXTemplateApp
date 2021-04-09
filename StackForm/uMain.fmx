@@ -67,37 +67,40 @@ object fMain: TfMain
         end>
       object SpeedButton1: TSpeedButton
         Align = Client
+        StyledSettings = [Family, Size, Style]
         Images = ImageList
         ImageIndex = 14
         Size.Width = 149.333328247070300000
         Size.Height = 60.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = 'ButtonBar'
-        Text = 'SpeedButton1'
+        Text = 'Inicio'
         TintColor = claTeal
         OnClick = SpeedButton1Click
       end
       object SpeedButton2: TSpeedButton
         Align = Client
+        StyledSettings = [Family, Size, Style]
         Images = ImageList
         ImageIndex = 33
         Size.Width = 149.333328247070300000
         Size.Height = 60.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = 'ButtonBar'
-        Text = 'SpeedButton'
+        Text = 'Evaluaciones'
         TintColor = claTeal
         OnClick = SpeedButton2Click
       end
       object SpeedButton3: TSpeedButton
         Align = Client
+        StyledSettings = [Family, Size, Style]
         Images = ImageList
         ImageIndex = 3
         Size.Width = 149.333343505859400000
         Size.Height = 60.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = 'ButtonBar'
-        Text = 'SpeedButton3'
+        Text = 'Mi Perfil'
         TintColor = claTeal
         OnClick = SpeedButton3Click
       end
@@ -111,10 +114,12 @@ object fMain: TfMain
       object ToolbarTitle: TLabel
         Align = Contents
         StyledSettings = [Style, FontColor]
-        Margins.Left = 20.000000000000000000
-        Margins.Right = 20.000000000000000000
-        Size.Width = 408.000000000000000000
-        Size.Height = 56.000000000000000000
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 440.000000000000000000
+        Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         TextSettings.Font.Family = 'Segoe UI SemiLight'
         TextSettings.Font.Size = 22.000000000000000000
@@ -127,12 +132,15 @@ object fMain: TfMain
         Images = ImageList
         ImageIndex = 35
         Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
         Position.X = 4.000000000000000000
         Position.Y = 4.000000000000000000
         Size.Width = 48.000000000000000000
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'priortoolbutton'
+        StyleLookup = 'ButtonMenuIconStyle'
         TabOrder = 0
         OnClick = BtnBackClick
       end
@@ -141,12 +149,15 @@ object fMain: TfMain
         Images = ImageList
         ImageIndex = 19
         Margins.Left = 4.000000000000000000
-        Position.X = 56.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Position.X = 60.000000000000000000
         Position.Y = 4.000000000000000000
         Size.Width = 48.000000000000000000
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'drawertoolbutton'
+        StyleLookup = 'ButtonMenuIconStyle'
         TabOrder = 1
         Text = 'drawertoolbutton'
       end
@@ -2801,38 +2812,17 @@ object fMain: TfMain
     Mode = Drawer
     NavigationPaneOptions.CollapsedWidth = 57.000000000000000000
     Size.Width = 250.000000000000000000
-    Size.Height = 601.000000000000000000
+    Size.Height = 648.000000000000000000
     Size.PlatformDefault = False
     Visible = False
     TabOrder = 0
-    object tbMenu: TToolBar
-      Align = MostTop
-      Size.Width = 250.000000000000000000
-      Size.Height = 55.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 0
-      object btnCloseMenu: TButton
-        Align = Left
-        Images = ImageList
-        ImageIndex = 12
-        Margins.Left = 4.000000000000000000
-        Position.X = 4.000000000000000000
-        Size.Width = 48.000000000000000000
-        Size.Height = 55.000000000000000000
-        Size.PlatformDefault = False
-        StyleLookup = 'ButtonMenuIconStyle'
-        TabOrder = 0
-        Text = 'btnMenu'
-        OnClick = btnCloseMenuClick
-      end
-    end
     object Button1: TSpeedButton
       Align = Top
       CanFocus = True
       StyledSettings = [Family, Style, FontColor]
       Images = ImageList
       ImageIndex = 2
-      Position.Y = 55.000000000000000000
+      Position.Y = 56.000000000000000000
       Size.Width = 250.000000000000000000
       Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
@@ -2848,7 +2838,7 @@ object fMain: TfMain
       StyledSettings = [Family, Style, FontColor]
       Images = ImageList
       ImageIndex = 10
-      Position.Y = 103.000000000000000000
+      Position.Y = 104.000000000000000000
       Size.Width = 250.000000000000000000
       Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
@@ -2864,7 +2854,7 @@ object fMain: TfMain
       StyledSettings = [Family, Style, FontColor]
       Images = ImageList
       ImageIndex = 39
-      Position.Y = 151.000000000000000000
+      Position.Y = 152.000000000000000000
       Size.Width = 250.000000000000000000
       Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
@@ -2873,6 +2863,31 @@ object fMain: TfMain
       TextSettings.Font.Size = 16.000000000000000000
       TextSettings.HorzAlign = Leading
       OnClick = SpeedButton4Click
+    end
+    object lyMenuTop: TLayout
+      Align = MostTop
+      Size.Width = 250.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object btnCloseMenu: TButton
+        Align = Left
+        Images = ImageList
+        ImageIndex = 12
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Position.X = 4.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'ButtonMenuIconStyle'
+        TabOrder = 0
+        Text = 'btnMenu'
+        OnClick = btnCloseMenuClick
+      end
     end
   end
   object ImageList: TImageList

@@ -33,7 +33,6 @@ type
     BtnMenu: TButton;
     MVMenu: TMultiView;
     PContent: TPanel;
-    tbMenu: TToolBar;
     btnCloseMenu: TButton;
     Button1: TSpeedButton;
     Button2: TSpeedButton;
@@ -47,6 +46,7 @@ type
     TopBar: TLayout;
     SpeedButton4: TSpeedButton;
     ImageList: TImageList;
+    lyMenuTop: TLayout;
     procedure BtnBackClick(Sender: TObject);
     procedure btnCloseMenuClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
